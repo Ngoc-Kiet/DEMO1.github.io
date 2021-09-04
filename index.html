@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Grunt CFD</title>
+        <link rel="icon" href="favicon.ico" />
+        <meta name="title" content="" />
+        <meta name="description" content="" />
+        <!-- meta facebook -->
+        <meta property="og:locale" content="vi" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Trang chủ" />
+        <meta property="og:description" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:image" content="" />
+
+        <link rel="stylesheet" href="dest/style.min.css" />
+        <link rel="stylesheet" href="dest/fonts.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="" class="header__logo-link">
+                            <img src="img/logo2.png" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-drop">
+                            <i class="fas fa-camera-retro header__search-drop-icon"></i>
+                            <span class="header__search-drop-name">Video</span>
+                            <i id="drop-menu" class="fas fa-caret-down header__search-drop-icon"></i>
+                            <ul class="header__search-drop-list">
+                                <li class="header__search-drop-item ">
+                                    <i class="fas fa-camera-retro header__search-drop-icon"></i>
+                                    <span class="header__search-drop-name">Video</span>
+                                </li>
+                                <li class="header__search-drop-item ">
+                                    <i class="fas fa-camera-retro header__search-drop-icon"></i>
+                                    <span class="header__search-drop-name">Video</span>
+                                </li>
+                                <li class="header__search-drop-item ">
+                                    <i class="fas fa-camera-retro header__search-drop-icon"></i>
+                                    <span class="header__search-drop-name">Video</span>
+                                </li>
+                                <div class="header__search-drop--separate "></div>
+
+                            </ul>
+                        </div>
+                        <div class="header__search-input-wrap">
+                            <input class="header__search-input" placeholder="Enter your keyword..." type="text">
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="header__language">
+                        <span class="header__language-title">Language</span>
+                        <div class="header__language-wrap">
+                            <img class="header__language-img drop-flag" src="img/usa.png" alt="">
+                            <i class="fas fa-caret-down header__search-drop-icon drop-flag"></i>
+                            <ul class="header__language-list">
+                                <li class="header__language-item">
+                                    <img class="header__language-img" src="img/spain.png" alt="">
+                                </li>
+                                <li class="header__language-item">
+                                    <img class="header__language-img" src="img/english.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="nav-mobile">
+                    <i> <img class="menu" src="img/menu.svg" alt=""></i>
+                    <a href="" class="header__logo-link">
+                        <img src="img/logo2.png" alt="" class="header__logo-img">
+                    </a>
+                    <button class="header__search-btn">
+                        <i> <img class="header__search-btn-icon" src="img/search.svg" alt=""></i>
+                    </button>
+                </div>
+                <div class="menu-fullscreen">
+                    <div class="menu-fullscreen__header">
+                        <ul class="menu-flag">
+                            <li class="menu-flag-item">
+                                <img class="menu-flag-item-img" src="img/england.png" alt="">
+                            </li>
+                            <li class="menu-flag-item">
+                                <img class="menu-flag-item-img" src="img/china.png" alt="">
+                            </li>
+                            <li class="menu-flag-item">
+                                <img class="menu-flag-item-img" src="img/japan.png" alt="">
+                            </li>
+                        </ul>
+                        <div class="menu-cancel">
+                            <img src="img/cancel.png" alt="" class="menu-cancel-img">
+                        </div>
+                    </div>
+                    <div class="menu-fullscreen__main">
+                         
+                            <div class="menu-fullscreen__right">
+                                <ul class="menu-category">    
+                                    <li class="menu-category-item"><span href="#">Home</span></li>
+                                    <li class="menu-category-item"><span href="#">Romance Movies</span></li>
+                                    <li class="menu-category-item"><span href="#">War Movies</span></li>
+                                    <li class="menu-category-item"><span href="#">Western</span></li>
+                                    <li class="menu-category-item">
+                                        <div class="menu-category-wrap">
+                                            <span href="#">Horror</span>
+                                    
+                                            <i class="fas fa-caret-down menu-drop-icon drop-category1"></i>
+                                        </div>
+                                    </li>
+                                    <li class="menu-category-item">
+                                        <div class="menu-category-wrap">
+                                            <span href="#">Musical</span>
+                                    
+                                            <i class="fas fa-caret-down menu-drop-icon drop-category1"></i>
+                                        </div>
+
+                                    </li>
+                                    <li class="menu-category-item"><span href="#">Action</span></li>
+                                    <li class="menu-category-item"><span href="#">Animeted</span></li>
+                                    <li class="menu-category-item">
+                                        <div class="menu-category-wrap">
+                                            <span href="#">Crime</span>
+                                    
+                                            <i class="fas fa-caret-down menu-drop-icon drop-category"></i>
+                                        </div>
+                                        
+                                        <ul class="category">
+                                            <li class="category-item"><span href="#">Crime Sub menu 1</span></li>
+                                            <li class="category-item"><span href="#">Crime Sub menu 1</span></li>
+                                            <li class="category-item"><span href="#">Crime Sub menu 1</span></li>
+                                                
+                                        </ul>
+                               
+
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                    </div>
+                    <div class="modal"></div>
+                </div>
+            </div>
+        </header>
+
+        <script type="text/javascript" src="dest/jsmain.min.js"></script>
+        <script type="text/javascript" src="dest/main.js"></script>
+    </body>
+</html>

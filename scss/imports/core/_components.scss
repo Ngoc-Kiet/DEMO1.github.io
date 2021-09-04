@@ -1,0 +1,160 @@
+// css components
+.menu-fullscreen {
+    visibility: hidden;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 0;
+    background: #1f2423;
+    z-index: 10;
+    transition: all 0.3s;
+    opacity: 0;
+    width: 80%;
+    overflow: hidden;
+    &.active {
+        visibility: visible;
+        width: 80%;
+        opacity: 1;
+        display: block !important;
+    }
+    &.active-mobile {
+        visibility: visible;
+        width: 100%;
+        opacity: 1;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 50px;
+        padding-top: 30px;
+        .menu-flag {
+            display: flex;
+            &-item {
+                &-img {
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    height: 45px;
+                    width: 45px;
+                    cursor: pointer;
+                    margin-left: 18px;
+                    overflow: hidden;
+                }
+            }
+        }
+        .menu-cancel {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+    }
+
+    &__main {
+        .menu-fullscreen__left {
+            .logo {
+                position: relative;
+                padding-bottom: 30px;
+                text-align: center;
+                img {
+                    width: 40px;
+                }
+            }
+
+            .close {
+                text-align: center;
+                cursor: pointer;
+                img {
+                    width: 40px;
+                    transition: all 0.5s;
+                    &:hover {
+                        transition: all 0.5s;
+                        opacity: 0.5;
+                        transform: scale(0.8);
+                    }
+                }
+            }
+        }
+        .menu-fullscreen__right {
+            padding-left: 36px;
+            .menu-category {
+                &-item {
+                    &::after {
+                        content: "";
+                        width: 114%;
+                        height: 1px;
+                        background-color: #7a7a7a;
+                        display: block;
+                        margin: 25px 0;
+                        margin-left: -35px;
+                        overflow: hidden;
+                    }
+                    span {
+                        color: $white-cl;
+                        font-family: eb;
+                        font-size: 26px;
+                        text-transform: capitalize;
+                        padding-bottom: 14px;
+                        position: relative;
+                        transition: all 0.3s;
+                        &::before {
+                            content: "";
+                            height: 1px;
+                            width: 0;
+                            background: $white-cl;
+                            position: absolute;
+                            bottom: 0;
+                            transition: all 0.3s;
+                        }
+
+                        &:hover {
+                            opacity: 0.5;
+                            transition: all 0.3s;
+
+                            &::before {
+                                width: 100%;
+                            }
+                        }
+
+                    }
+                    .category{
+                       display: none;
+                        list-style: none;
+                        color: #7a7a7a;
+                        &-item{
+                            color: #7a7a7a;
+                            padding: 18px 0;
+
+                        }
+                        li::before{
+                            content: "\2022";
+                            color: #7a7a7a;
+                            font-weight: bold;
+                            display: inline-block; 
+                            width: 1em;
+                            margin-left: 15px;
+                        }
+                    }
+                    .menu-category-wrap{
+                        display: flex;
+                        justify-content: space-between;
+                        align-content: center;
+                        .menu-drop-icon{
+                            margin-right:20px ;
+                            color: #7a7a7a;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(24, 24, 24, 0.8);
+        z-index: -1;
+    }
+}

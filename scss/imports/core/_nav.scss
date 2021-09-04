@@ -1,0 +1,29 @@
+// css navigator (Menu)
+.nav-mobile{
+    display: none;
+    
+    // .menu{
+
+    //     color: white;
+    //     font-size: 30px;
+
+    // }
+
+    @media (max-width : 520px){
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      padding: 10px 0px ;
+    .header__search-btn{
+        background-color: transparent;
+        &-icon{
+            // color: #fff;
+            // font-size: 30px;
+            max-width: 30px;
+        }
+    }
+  
+}
+}
